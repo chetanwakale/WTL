@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            background-color: #16a085;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #d1e8e2;
+        }
+        footer {
+            text-align: center;
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: pink;
+        }
+        button {
+            background-color: #6a92db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #16a085;
+        }
+        ul.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+        ul.gallery li {
+            flex: 1 1 calc(33.333% - 15px);
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        ul.gallery li:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        ul.gallery img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            transition: transform 0.3s;
+        }
+        ul.gallery img:hover {
+            transform: scale(1.05);
+        }
+        #services video {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-height: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        form button {
+            align-self: start;
+            font-size: 1em;
+        }
+        .contact-highlight {
+            background-color: #e8f8f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .contact-highlight h3 {
+            margin: 0 0 10px 0;
+            color: hsl(354, 23%, 33%);
+        }
+        .contact-highlight p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        #about {
+            background: linear-gradient(to right, #1abc9c, #8b9c5b);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        #about h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        #about p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Chetan Clothing Store</h1>
+    </header>
+
+   
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2 style="color: black; font-size: 60px;">About Us</h2>
+            <p>Discover the latest trends in fashion with our premium collection. From casual wear to elegant outfits, we bring style to every occasion.</p>
+        </section>
+
+       
+        <section id="products">
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: brown;">Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Casual Shirt</td>
+                        <td>Men</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td>Lehenga</td>
+                        <td>Women</td>
+                        <td>2500</td>
+                    </tr>
+                    <tr>
+                        <td>Kids' Jacket</td>
+                        <td>Kids</td>
+                        <td>500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+        
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter a valid email id">
+        
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile number">
+                <label for="Address">Address:</label>
+                <input type="Address" id="Address" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        
+            <div class="contact-highlight">
+                <h3>Visit Us</h3>
+                <p><strong>Address:</strong> Sai City, Kopargaon</p>
+                <p><strong>Phone:</strong> 8459912096</p>
+                <p><strong>Email:</strong> Chetan@clothing.com</p>
+            </div>
+        </section>
+        
+        <script>
+            function validateForm() {
+                var email = document.getElementById('email').value;
+                var mobile = document.getElementById('mobile').value;
+                
+                var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                var mobilePattern = /^[6-9]\d{9}$/; 
+        
+                if (!emailPattern.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return false;
+                }
+        
+                if (!mobilePattern.test(mobile)) {
+                    alert('Please enter a valid 10-digit mobile number.');
+                    return false;
+                }
+        
+                return true;
+            }
+        </script>
+        
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <ul class="gallery">
+                <li>
+                    <div class="card">
+                        <img src="./images/clothes1.jpg" alt="Clothing Item 1">
+                        <div class="card-content">
+                            <h3>Sweater</h3>
+                            <p>Best one to protect you from the winter cold</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./images/clothes2.jpg" alt="Clothing Item 2">
+                        <div class="card-content">
+                            <h3>Double-Pocket Shirts</h3>
+                            <p>Comfortable and fashionable Shirts for daily wear.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./images/clothes3.jpg" alt="Clothing Item 3">
+                        <div class="card-content">
+                            <h3>Top for Girls</h3>
+                            <p>Elegant outfit for girls to wear in events.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./images/clothes4.jpg" alt="Clothing Item 4">
+                        <div class="card-content">
+                            <h3>Hoodie</h3>
+                            <p>Stylish Hoodies for mens for a solid look</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./images/clothes5.jpg" alt="Clothing Item 5">
+                        <div class="card-content">
+                            <h3>Pants</h3>
+                            <p>Premium quality pants for ultimate comfort.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./images/clothes6.jpg" alt="Clothing Item 6">
+                        <div class="card-content">
+                            <h3>T-Shirts</h3>
+                            <p>Stylish and versatile wardrobe essential t-shirts to wear.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Chetan Clothing Store. All rights reserved.</p>
+        <p>Follow us on: 
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Facebook</a> | 
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Instagram</a> | 
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Twitter</a>
+        </p>
+        <p><a href="#about" style="color: white; text-decoration: none;">About</a> | 
+           <a href="#products" style="color: white; text-decoration: none;">Products</a> | 
+           <a href="#gallery" style="color: white; text-decoration: none;">Gallery</a> | 
+           <a href="#contact" style="color: white; text-decoration: none;">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+ 
