@@ -1,78 +1,93 @@
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #ada1ce;"> 
-    <div style="border: 2px solid black; width: 350px; padding: 20px; border-radius: 10px; background: rgb(59, 145, 177); box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
-      <form action="" onsubmit="return validateForm()">
-        <h1 style="text-align: center; font-size: 22px; color: #333;">Registration Form</h1>
-        
-        <table style="width: 100%;">
-          <tr>
-            <th style="text-align: left; padding: 5px;">Name:</th>
-            <td><input type="text" name="name" placeholder="Enter your name" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
-          </tr>
-          <tr>
-            <th style="text-align: left; padding: 5px;">Email:</th>
-            <td><input type="email" name="email" id="email" placeholder="Enter your email" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
-          </tr>
-          <tr>
-            <th style="text-align: left; padding: 5px;">Password:</th>
-            <td><input type="password" name="password" placeholder="Enter password" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
-          </tr>
-          <tr>
-            <th style="text-align: left; padding: 5px;">Number:</th>
-            <td><input type="text" name="number" id="number" placeholder="Enter your number" required pattern="\d{10}" title="Enter a valid 10-digit number" style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
-          </tr>
-          <tr>
-            <th style="text-align: left; padding: 5px;">Date of Birth:</th>
-            <td><input type="date" name="dob" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
-          </tr>
-          <tr>
-            <th style="text-align: left; padding: 5px;">Gender:</th>
-            <td>
-              <input type="radio" name="gender" value="male" required> Male
-              <input type="radio" name="gender" value="female"> Female
-            </td>
-          </tr>
-          <tr>
-            <th style="text-align: left; padding: 5px;">Country:</th>
-            <td>
-              <select name="country" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;">
-                <option value="">Select your country</option>
-                <option value="US">United States</option>
-                <option value="IN">India</option>
-                <option value="UK">United Kingdom</option>
-                <option value="CA">Canada</option>
-                <option value="AU">Australia</option>
-              </select>
-            </td>
-          </tr>
-        </table>
-  
-        <button type="submit" style="width: 100%; background: #4CAF50; color: white; padding: 10px; margin-top: 15px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s;">Register</button>
-  
-        <p style="text-align: center; margin-top: 10px; font-size: 14px;">
-          Already registered? 
-          <a href="login" style="color: #007BFF; text-decoration: none; font-weight: bold;">Login</a>
-        </p>
-      </form>
-    </div>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #e2dfec;">  
+  <div style="border: 2px solid black; width: 350px; padding: 20px; border-radius: 10px; background: rgb(217, 231, 237); box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+    <form action="" onsubmit="return validateForm()">
+      <h1 style="text-align: center; font-size: 22px; color: #333;">Registration Form</h1>
+      
+      <table style="width: 100%;">
+        <tr>
+          <th style="text-align: left; padding: 5px;">Name:</th>
+          <td><input type="text" name="name" placeholder="Enter your name" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">Email:</th>
+          <td><input type="email" name="email" id="email" placeholder="Enter your email" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">Password:</th>
+          <td><input type="password" name="password" placeholder="Enter password" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">Number:</th>
+          <td><input type="text" name="number" id="number" placeholder="Enter your number" required pattern="\d{10}" title="Enter a valid 10-digit number" style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">Date of Birth:</th>
+          <td><input type="date" name="dob" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">Gender:</th>
+          <td>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+          </td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">Country:</th>
+          <td>
+            <select name="country" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;">
+              <option value="">Select your country</option>
+              <option value="US">United States</option>
+              <option value="IN">India</option>
+              <option value="UK">United Kingdom</option>
+              <option value="CA">Canada</option>
+              <option value="AU">Australia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 5px;">State:</th>
+          <td>
+            <select name="country" required style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;">
+              <option value="">Select your state</option>
+              <option value="GJ">Gujarat</option>
+              <option value="MH">Maharashtra</option>
+              <option value="KE">Kerala</option>
+              <option value="J&K">Jammu & Kashmir</option>
+              <option value="UP">Uttar Pradesh</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+       
+
+      <button type="submit" style="width: 100%; background: #4CAF50; color: white; padding: 10px; margin-top: 15px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s;">Register</button>
+
+      <p style="text-align: center; margin-top: 10px; font-size: 14px;">
+        Already registered? 
+        <a href="login" style="color: #007BFF; text-decoration: none; font-weight: bold;">Login</a>
+      </p>
+    </form>
+  </div>
 </div>
 
 <script>
-  function validateForm() {
-      let email = document.getElementById("email").value;
-      let number = document.getElementById("number").value;
-      let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      let numberPattern = /^\d{10}$/;
+function validateForm() {
+    let email = document.getElementById("email").value;
+    let number = document.getElementById("number").value;
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    let numberPattern = /^\d{10}$/;
 
-      if (!emailPattern.test(email)) {
-          alert("Please enter a valid email address.");
-          return false;
-      }
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
 
-      if (!numberPattern.test(number)) {
-          alert("Please enter a valid 10-digit phone number.");
-          return false;
-      }
+    if (!numberPattern.test(number)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+    }
 
-      return true;
-  }
+    return true;
+}
 </script>
